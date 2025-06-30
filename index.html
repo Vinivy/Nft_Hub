@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markt NFT</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="">
+    <section id="Home">
+      <header>
+        <h3>NFTHub</h3>
+        <nav>
+          <div class="pseud"></div>
+          <div class="NERKO">
+            <svg xmlns="http://www.w3.org/2000/svg" width="140" height="56" viewBox="0 0 120 36" fill="none">
+              <g clip-path="url(#clip0_1_2786)">
+                <path d="M22.455 34.6525V9.9025H0V34.6525H6.435V16.0675H16.02V34.6525H22.455Z" fill="#0F051D"/>
+                <path d="M38.2448 9.3625C30.9548 9.3625 25.4648 14.9425 25.4648 22.3225C25.4648 29.6575 30.9098 35.2375 38.4248 35.2375C44.4548 35.2375 49.8098 31.6375 50.8448 25.5625H44.1848C43.5998 28.2625 41.2148 29.7475 38.4698 29.7475C34.8698 29.7475 32.2598 27.3175 32.0348 23.4925H50.8898C50.9798 22.7275 51.0698 21.7375 50.8898 20.4325C50.1248 13.6825 44.6348 9.3625 38.2448 9.3625ZM38.3348 14.6725C40.9448 14.6725 43.5548 16.1575 44.1398 19.2175H32.4848C33.2498 16.4275 35.4548 14.6725 38.3348 14.6725Z" fill="#0F051D"/>
+                <path d="M68.9564 16.0675V9.9025H53.8364V34.6525H60.2714V16.0675H68.9564Z" fill="#0F051D"/>
+                <path d="M77.4999 19.7125V0.00249958H71.0649V34.6525H77.4999V24.3475L86.1849 34.6525H94.3295L83.5299 21.8275L93.4749 9.9025H85.4199L77.4999 19.7125Z" fill="#0F051D"/>
+                <path d="M106.369 9.3625C99.259 9.3625 93.4536 14.8525 93.4536 22.2775C93.4536 29.7025 99.169 35.2375 106.369 35.2375C113.569 35.2375 119.239 29.7475 119.239 22.3225C119.239 14.8525 113.479 9.3625 106.369 9.3625ZM106.369 15.4825C109.969 15.4825 112.759 18.2725 112.759 22.3225C112.759 26.3725 109.969 29.1175 106.369 29.1175C102.814 29.1175 99.979 26.3725 99.979 22.3225C99.979 18.2275 102.769 15.4825 106.369 15.4825Z" fill="#0F051D"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_1_2786">
+                  <rect width="120" height="35.625" fill="white" transform="translate(0 0.00249958)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <ul>
+            <li id="AddMais">Home</li>
+            <li id="AddMais">Colletion</li>
+            <li id="AddMais">Choose</li>
+            <li id="AddMais">About</li>
+            <li id="AddMais">Roadmap</li>
+            <li id="AddMais">Blog</li>
+          </ul>
+          <div class="Redes">
+            <ion-icon id="Twitter" name="logo-twitter"></ion-icon>
+            <ion-icon id="Discord" name="logo-discord"></ion-icon>
+            <ion-icon id="Instagram" name="logo-instagram"></ion-icon>
+            <ion-icon id="Wallet" name="wallet"></ion-icon>
+          </div>
+        </nav>
+        <div class="onMobile">
+          <ion-icon id="Tw" name="logo-twitter"></ion-icon>
+          <ion-icon id="Ds" name="logo-discord"></ion-icon>
+          <ion-icon id="Is" name="logo-instagram"></ion-icon>
+          <ion-icon id="Wl" name="wallet"></ion-icon>
+
+          <button class="TOGGLE" onclick="onMobileToggle()" style="background-color: transparent; border: 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30" fill="none">
+              <path d="M10.2 14.1H3.9C2.83333 14.1 1.91667 13.7167 1.15 12.95C0.383333 12.1833 0 11.2667 0 10.2V3.9C0 2.83333 0.383333 1.91667 1.15 1.15C1.91667 0.383333 2.83333 0 3.9 0H10.2C11.2667 0 12.1833 0.383333 12.95 1.15C13.7167 1.91667 14.1 2.83333 14.1 3.9V10.2C14.1 11.2667 13.7167 12.1833 12.95 12.95C12.1833 13.7167 11.2667 14.1 10.2 14.1ZM3.9 1.9C3.3 1.9 2.81667 2.08333 2.45 2.45C2.08333 2.81667 1.9 3.3 1.9 3.9V10.2C1.9 10.7333 2.08333 11.2 2.45 11.6C2.81667 12 3.3 12.2 3.9 12.2H10.2C10.7333 12.2 11.2 12 11.6 11.6C12 11.2 12.2 10.7333 12.2 10.2V3.9C12.2 3.3 12 2.81667 11.6 2.45C11.2 2.08333 10.7333 1.9 10.2 1.9H3.9ZM26.1 14.1H19.8C18.7333 14.1 17.8167 13.7167 17.05 12.95C16.2833 12.1833 15.9 11.2667 15.9 10.2V3.9C15.9 2.83333 16.2833 1.91667 17.05 1.15C17.8167 0.383333 18.7333 0 19.8 0H26.1C27.1667 0 28.0833 0.383333 28.85 1.15C29.6167 1.91667 30 2.83333 30 3.9V10.2C30 11.2667 29.6167 12.1833 28.85 12.95C28.0833 13.7167 27.1667 14.1 26.1 14.1ZM19.8 1.9C19.2667 1.9 18.8 2.08333 18.4 2.45C18 2.81667 17.8 3.3 17.8 3.9V10.2C17.8 10.7333 18 11.2 18.4 11.6C18.8 12 19.2667 12.2 19.8 12.2H26.1C26.7 12.2 27.1833 12 27.55 11.6C27.9167 11.2 28.1 10.7333 28.1 10.2V3.9C28.1 3.3 27.9167 2.81667 27.55 2.45C27.1833 2.08333 26.7 1.9 26.1 1.9H19.8ZM23 30C21.7333 30 20.55 29.6833 19.45 29.05C18.35 28.4167 17.4833 27.5667 16.85 26.5C16.2167 25.4333 15.9 24.2667 15.9 23C15.9 21.7333 16.2167 20.55 16.85 19.45C17.4833 18.35 18.35 17.4833 19.45 16.85C20.55 16.2167 21.7333 15.9 23 15.9C24.2667 15.9 25.4333 16.2167 26.5 16.85C27.5667 17.4833 28.4167 18.35 29.05 19.45C29.6833 20.55 30 21.7333 30 23C30 24.2667 29.6833 25.4333 29.05 26.5C28.4167 27.5667 27.5667 28.4167 26.5 29.05C25.4333 29.6833 24.2667 30 23 30ZM23 17.8C21.5333 17.8 20.3 18.3 19.3 19.3C18.3 20.3 17.8 21.5167 17.8 22.95C17.8 24.3833 18.3 25.6 19.3 26.6C20.3 27.6 21.5167 28.1 22.95 28.1C24.3833 28.1 25.6 27.6 26.6 26.6C27.6 25.6 28.1 24.3833 28.1 22.95C28.1 21.5167 27.6 20.3 26.6 19.3C25.6 18.3 24.4 17.8 23 17.8ZM10.2 30H3.9C2.83333 30 1.91667 29.6167 1.15 28.85C0.383333 28.0833 0 27.1667 0 26.1V19.8C0 18.7333 0.383333 17.8167 1.15 17.05C1.91667 16.2833 2.83333 15.9 3.9 15.9H10.2C11.2667 15.9 12.1833 16.2833 12.95 17.05C13.7167 17.8167 14.1 18.7333 14.1 19.8V26.1C14.1 27.1667 13.7167 28.0833 12.95 28.85C12.1833 29.6167 11.2667 30 10.2 30ZM3.9 17.8C3.3 17.8 2.81667 18 2.45 18.4C2.08333 18.8 1.9 19.2667 1.9 19.8V26.1C1.9 26.7 2.08333 27.1833 2.45 27.55C2.81667 27.9167 3.3 28.1 3.9 28.1H10.2C10.7333 28.1 11.2 27.9167 11.6 27.55C12 27.1833 12.2 26.7 12.2 26.1V19.8C12.2 19.2667 12 18.8 11.6 18.4C11.2 18 10.7333 17.8 10.2 17.8H3.9Z" fill="#741FF5"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <main>
+        <div class="Info">
+          <h1>High Quality NFT Collection</h1>
+          <p>A 890 piece custom Nfthub's collection is
+            joining the NFT space on Opensea.</p>
+          <button>View in OPENSEA <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="none">
+            <path d="M3.55078 0.643311V2.14331H12.9961L0.550781 14.5886L1.60547 15.6433L14.0508 3.198V12.6433H15.5508V0.643311H3.55078Z" fill="white"/>
+          </svg> </button>
+          <div class="Members">
+            <img src="./Assets/Users/Users.png" alt="">
+            <span>
+              <h3>47k+</h3>
+              <p>Community members</p>
+            </span>
+          </div>
+        </div>
+        <img src="./Assets/Componentes/Adds/div.banner__images-grid-two.png" alt="OXIIIIIIIIII">
+        <button style="display: flex; align-items: center;" id="DarkMode" onclick="toggleDarkMode()">
+          <ion-icon id="Sun" name="sunny-outline"></ion-icon>
+        </button>
+      </main>
+    </section>
+
+    <section id="Colletion">
+      <div class="MarcasFundadoras">
+       <img class="Mask" src="./Assets/Componentes/Marcas/MetaMask.svg"  style= "max-width: 100px; min-width: 70px;"  alt="">
+       <img class="BitGo" src="./Assets/Componentes/Marcas/BitGo.svg" style= "max-width: 100px; min-width: 70px;" alt="">
+       <img class="CoinBase" src="./Assets/Componentes/Marcas/CoinBase.svg" style= "max-width: 100px; min-width: 70px;" alt="">
+       <img class="TrustWallet" src="./Assets/Componentes/Marcas/TrustWallet.svg" style= "max-width: 100px; min-width: 70px;" alt="">
+       <img class="Exodus" src="./Assets/Componentes/Marcas/EXODUS.svg" style= "max-width: 100px; min-width: 70px;" alt="">
+      </div>
+
+      <img src="./Assets/Componentes/Adds/VectorEntres.svg" alt="">
+
+      <div class="swiperNft">
+        <h1 style="display: flex; gap: 10px;" >Nfthub's <span>collection</span></h1>
+        <div class="NFTS">
+          <button id="Left"> <ion-icon name="left"></ion-icon></button>
+          <div class="picture">
+            <img src="/Assets/Componentes/ArtesNFTS/MetaVerse.jpg" style="width: 68%; border-radius: 5%;" alt="">
+            <h3>#Metaverse</h3>
+            <p>By TheSalvare</p>
+          </div>
+          <div class="picture">
+            <img src="/Assets/Componentes/ArtesNFTS/Pollioll.jpg" style="width: 70%; border-radius: 5%;" alt="">
+            <h3>#Polly Doll</h3>
+            <p>By TheNative</p>
+          </div>
+          <div class="picture">
+            <img src="/Assets/Componentes/ArtesNFTS/Alec.jpg" style="width: 54%; border-radius: 5%;" alt="">
+            <h3>#Alec Art</h3>
+            <p>By GeorgZvic</p>
+          </div>
+          <div class="picture">
+            <img src="/Assets/Componentes/ArtesNFTS/Toxic.jpg" style="width: 70%; border-radius: 5%;" alt="">
+            <h3>#Toxic Poeth</h3>
+            <p>By YazoiLup</p>
+          </div>
+          <button id="Rigth"><ion-icon name="rigth"></ion-icon></button>
+        </div>
+        <!--ADICIONAR FUNCIONALIDADE AQUI-->
+        <div id="checar">
+          <button id="">
+          <button id="">
+          <button id="">
+          <button id="">
+          <button id="">
+        </div>
+
+        <button id="View">View collection <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 16 16" fill="none">
+          <path d="M3.94073 0.193359V1.69336H13.386L0.940735 14.1387L1.99542 15.1934L14.4407 2.74805V12.1934H15.9407V0.193359H3.94073Z" fill="white"/>
+        </svg></button>
+      </div>
+    </section>
+    
+    <section id="Choose">
+      <img src="./Assets/Componentes/Adds/VectorEntres.svg" alt="">
+
+      <div class="us">
+        <h2>Why <span>choose us?</span></h2>
+        <div class="itensCho">
+          <div class="huge">
+            <div>
+            <img src="./Assets/Componentes/ChooseUs/Pasta.svg" style="padding: 0 0 0 10%;" alt="">
+            <h4>Huge </br>collection</h4>
+            <p>A collection of 890
+              unique Nerkos built to go
+              beyond the digital space.</p>
+            </div>
+          </div>
+          <div class="quality">
+            <div>
+              <img src="./Assets/Componentes/ChooseUs/Verification.svg" style="padding: 0 0 0 10%;" alt="">
+              <h4>High </br> quality</h4>
+              <p>The nerko’s collection
+                includes dozens of rare
+                costumes ands colorways
+                of artist's.</p>
+            </div>
+          </div>
+          <div class="resource">
+            <div>
+              <img src="./Assets/Componentes/ChooseUs/Prancheta.svg" style="padding: 0 0 0 10%;" alt="">
+              <h4>Top </br>resource</h4>
+              <p>Tasty design resources
+                made with care for each
+                pixel. NFTs and game
+                resources.</p>
+            </div>
+          </div>
+          <div class="community">
+            <div>
+              <img src="./Assets/Componentes/ChooseUs/Social.svg" style="padding: 0 0 0 10%;" alt="">
+              <h4>Big </br>community</h4>
+              <p>Be part of a community of
+                nerko owners and create
+                user generated items.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="./Assets/Componentes/Adds/VectorEntres.svg" alt="">
+
+      <div class="conectados">
+        <div>
+          <h3>400k+</h3>
+          <p>what for inn gain</p>
+        </div>
+        <div>
+          <h3>20k+</h3>
+          <p>what for inn gain</p>
+        </div>
+        <div>
+          <h3>230+</h3>
+          <p>Creative artists</p>
+        </div>
+        <div>
+          <h3>2.5x</h3>
+          <p>Estimated value</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Works">
+      <img src="./Assets/Componentes/Adds/VectorEntres.svg" alt="">
+      <h2 class="How">How it<span>works!</span></h2>
+        <div class="wallet">
+          <img class="carteira" style="width: 200px;" src="./Assets/Componentes/Works/Bitcoin.png" alt="">
+          <div class="antiondireitaOne">
+            <h3>01.</h3>
+            <h2>Setup and </br>connect your </br>wallet.</h2>
+            <p>Use Trust Wallet, Metamask or any wallet to connect to</br>
+              multiple chains the app.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</br>
+              Metamask or any wallet ipsam temporibus.</p>
+              <button style="border: 0; background: transparent; width: 41%; display: flex; gap: 5px; align-items: center; justify-content
+              : center; border-bottom: 3px solid rgba(131, 131, 131, 0.25);font-family: Inter; font-size: 12px; font-style: normal; font-weight: 700; ">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="none">
+                <path d="M3.89075 0.0683594V1.56836H13.3361L0.890747 14.0137L1.94543 15.0684L14.3907 2.62305V12.0684H15.8907V0.0683594H3.89075Z" fill="#0F051D"/>
+              </svg>
+            </button>
+          </div>
+        </div>  
+        <div class="artwork">
+          <div class="antiondireitaTwo">
+            <h3>02.</h3>
+            <h2>Create your own </br>
+              digital artwork</h2>
+            <p>Quality comes first. we took our time to plan out everything</br>
+              and build our production pipeline for a good quality</br>
+              artwork's & digital artwork.</p>
+            <p>Starting the production on the procedurally generated</br>
+              planets and the smart contract for minting.</p>
+            <button style="border: 0; background: transparent; width: 40%; display: flex; gap: 5px; align-items: center; 
+             border-bottom: 3px solid rgba(131, 131, 131, 0.25);font-family: Inter; font-size: 12px; font-style: normal; font-weight: 700; ">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="none">
+              <path d="M3.89075 0.0683594V1.56836H13.3361L0.890747 14.0137L1.94543 15.0684L14.3907 2.62305V12.0684H15.8907V0.0683594H3.89075Z" fill="#0F051D"/>
+            </svg>
+          </button>
+          </div>
+          <img class="quadro" style="width: 200px;" src="./Assets/Componentes/Works/ArtNFT.png" alt="">
+        </div>
+        <div class="plataform">
+          <img class="Sell" style="width: 200px;" src="./Assets/Componentes/Works/SellFace.png" alt="">
+          <div class="antiondireitaOne">
+            <h3>03.</h3>
+            <h2>Choose a</br>
+              platform to sell</br>
+              your NFT</h2>
+            <p>Earn ETH and BIT for all your NFTs that you sell on our</br>
+              marketplace.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</br>
+              Recusa align-self: center; justify-self: center;ndae doloremque a officiis quasi autem!</p>
+            <button style="border: 0; background: transparent; width: 40%; display: flex; gap: 5px; align-items: center; 
+             border-bottom: 3px solid rgba(131, 131, 131, 0.25);font-family: Inter; font-size: 12px; font-style: normal; font-weight: 700; ">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16" fill="none">
+              <path d="M3.89075 0.0683594V1.56836H13.3361L0.890747 14.0137L1.94543 15.0684L14.3907 2.62305V12.0684H15.8907V0.0683594H3.89075Z" fill="#0F051D"/>
+            </svg>
+          </button>
+          </div>
+        </div>
+    </section>
+
+    <section id="drop">
+      <img src="./Assets/Componentes/Adds/VectorEntres.svg" alt="">
+      <form id="FORM">
+        <h2 style="
+          display: flex; 
+          gap: 5px; 
+          color: var(--GraphicColor);
+          margin: 0;
+
+          text-align: center;
+          font-family: Inter;
+          font-size: 34px;
+          font-weight: 700;
+          
+          ">Never <span>miss a drop!</span>
+        </h2>
+        <p style="
+          margin: 10px 0 10px 0;
+          color: #7B7583;
+          text-align: center;
+          font-family: Inter;
+          font-size: 11px;
+          font-style: normal;
+          font-weight: 400;
+        ">Subscribe to our super-rare and exclusive drops & collectibles.</p>
+        <div style="display: flex; justify-content: space-evenly; width: 100%;">
+          <input type="text" placeholder="Enter your email" style="
+            padding: 0 0 0 20px;
+            outline: none;
+            width: 60%;
+            height: 2rem;
+            border: 0;
+            color: #7B7583;
+            font-family: Inter;
+            font-size: 11px;
+            font-weight: 400;
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.05);
+          " >
+
+          <button style="
+           color: #FFF;
+           font-weight: 700;
+           line-height: 19.2px;
+           font-family: Inter;
+           font-size: 10px;
+           width: 20%;
+           border: 0;
+           border-radius: 50px;
+           background: linear-gradient(51deg, #2600FC 0%, #FF00EA 100%);
+          ">Subscribe</button>
+        </div>
+      </form>
+      <img src="./Assets/Componentes/Adds/VectorEntres.svg" alt="">
+    </section>
+
+    <section id="Rodmap">
+      <h2 style="
+        display: flex;
+        gap: 10px;
+        margin: 0;
+        color: var(--GraphicColor);
+        
+        font-family: Inter;
+        font-size: 34px;
+        font-weight: 700;  
+      ">Nfthub's <span style="
+        background: linear-gradient(67deg, #2600FC 0%, #FF00EA 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      ">Roadmap</span></h2>
+      <div class="Map">
+        <section>
+         <div class="porcentagem"> <h3>PHASE 01</h3> <span>0<p style="margin: 0;">%</p></span> </div>
+          <div class="conteudo">  
+            <h2>Planning</h2>
+            <p>Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.</p>
+            <span style="
+              margin: 10px 0 0 0;
+              width: 50%;
+              transform: rotate(0);
+              height: 1px;
+              background: rgba(131, 131, 131, 0.25);
+              ">
+            </span>
+            <p id="Release">Release website and logo</br>
+             Crow community</br>
+              Lauch the project</p>
+          </div>
+        </section>
+        <section>
+         <div class="porcentagem"> <h3>PHASE 02</h3> <span>25<p style="margin: 0;">%</p></span> </div>
+          <div class="conteudo">  
+           <h2>Production</h2>
+            <p>Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.</p>
+            <span style="
+              margin: 10px 0 0 0;
+              width: 50%;
+              transform: rotate(0);
+              height: 1px;
+              background: rgba(131, 131, 131, 0.25);">
+            </span>
+            <p id="Release">Release website and logo</br>
+             Crow community</br>
+              Lauch the project</p>
+          </div>
+        </section>
+        <section>
+         <div class="porcentagem"> <h3>PHASE 03</h3> <span>50<p style="margin: 0;">%</p></span> </div>
+          <div class="conteudo">  
+            <h2>Launch</h2>
+            <p>Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.</p>
+            <span style="
+              margin: 10px 0 0 0;
+              width: 50%;
+              transform: rotate(0);
+              height: 1px;
+              background: rgba(131, 131, 131, 0.25);">
+            </span>
+            <p id="Release">Release website and logo</br>
+             Crow community</br>
+              Lauch the project</p>
+          </div>
+        </section>
+        <section>
+         <div class="porcentagem"> <h3>PHASE 04</h3> <span>75<p style="margin: 0;">%</p></span> </div>
+          <div class="conteudo">  
+            <h2>Minting</h2>
+            <p>Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.</p>
+            <span style="
+              margin : 10px 0 0 0;
+              width: 50%;
+              transform: rotate(0);
+              height: 1px;
+              background: rgba(131, 131, 131, 0.25);">
+            </span>
+            <p id="Release">Release website and logo</br>
+             Crow community</br>
+              Lauch the project</p>
+          </div>
+        </section>
+        <section>
+         <div class="porcentagem"> <h3>PHASE 05</h3> <span>95<p style="margin: 0;">%</p></span> </div>
+          <div class="conteudo">  
+            <h2>New Nfts</h2>
+            <p>Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.</p>
+            <span style="
+              margin: 10px 0 0 0;
+              width: 50%;
+              transform: rotate(0);
+              height: 1px;
+              background: rgba(131, 131, 131, 0.25);">
+            </span>
+            <p id="Release">Release website and logo</br>
+             Crow community</br>
+              Lauch the project</p>
+          </div>
+        </section>
+        <section>
+         <div class="porcentagem"> <h3>PHEASE 06</h3> <span>100<p style="margin: 0;">%</p></span> </div>
+          <div class="conteudo">  
+            <h2>Metaverse</h2>
+            <p>Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks.</p>
+            <span style="
+              margin: 10px 0 0 0;
+              width: 50%;
+              transform: rotate(0);
+              height: 1px;
+              background: rgba(131, 131, 131, 0.25);">
+            </span>
+            <p id="Release">Release website and logo</br>
+             Crow community</br>
+              Lauch the project</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="Artistic">
+      <img src="./Assets/Componentes/Adds/VectorEntres.svg" alt="">
+      <div class="artics">
+        <h3>Meet<span> the artists</span></h3>
+        <section>
+          <div class="Step">
+            <img src="./Assets/Componentes/Artistas/StepJobs.png" style="
+            width: 80%; 
+            padding: 10px; 
+            border-radius: 32px;
+            border: 1px solid rgba(131, 131, 131, 0.25);
+            " alt="">
+            <h4>Step Jobs</h4>
+            <p>Artist</p>
+            <ul>
+              <ion-icon id="Twitter" name="logo-twitter"></ion-icon>
+              <ion-icon id="Discord" name="logo-discord"></ion-icon>
+              <ion-icon id="Instagram" name="logo-instagram"></ion-icon>
+            </ul>
+          </div>
+          <div class="Andry">
+            <img src="./Assets/Componentes/Artistas/Andry.png" style="
+              width: 80%;  
+              padding: 10px; 
+              border-radius: 32px;
+              border: 1px solid rgba(131, 131, 131, 0.25);
+              " alt="">
+            <h4>Andry Moray</h4>
+            <p>Blockchain</p>
+            <ul>
+              <ion-icon id="Twitter" name="logo-twitter"></ion-icon>
+              <ion-icon id="Discord" name="logo-discord"></ion-icon>
+              <ion-icon id="Instagram" name="logo-instagram"></ion-icon>
+            </ul>
+          </div>
+          <div class="Zaid">
+            <img src="./Assets/Componentes/Artistas/Zaid.png" style="
+              width: 80%; 
+              padding: 10px; 
+              border-radius: 32px;
+              border: 1px solid rgba(131, 131, 131, 0.25);
+              " alt="">
+            <h4>Zaid Ed</h4>
+            <p>Developer</p>
+            <ul>
+              <ion-icon id="Twitter" name="logo-twitter"></ion-icon>
+              <ion-icon id="Discord" name="logo-discord"></ion-icon>
+              <ion-icon id="Instagram" name="logo-instagram"></ion-icon>
+            </ul>
+          </div>
+          <div class="Laila">
+            <img src="./Assets/Componentes/Artistas/Laila.png" style="
+              width: 80%; 
+              padding: 10px; 
+              border-radius: 32px;
+              border: 1px solid rgba(131, 131, 131, 0.25);
+              " alt="">
+            <h4>Laila Ed</h4>
+            <p>Markting</p>
+            <ul>
+              <ion-icon id="Twitter" name="logo-twitter"></ion-icon>
+              <ion-icon id="Discord" name="logo-discord"></ion-icon>
+              <ion-icon id="Instagram" name="logo-instagram"></ion-icon>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <img src="./Assets/Componentes/Adds/VectorEntres.svg" alt="">
+    </section> 
+
+    <section id="Question">
+      <h2>Your questions,</br><span>answered!</span></h2>
+      <div>
+        <details>
+          <summary>What is Nfthub's NFT Collection?</summary>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat proident.</p>
+          <p>Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat proident.</p>
+        </details>
+        <details>
+          <summary>How we can buy and invest NFT?</summary>
+        </details>
+        <details>
+          <summary>Why we should choose Nerko's NFT?</summary>
+        </details>
+        <details>
+          <summary>Why we should choose Nerko's NFT?</summary>
+        </details>
+        <details>
+          <summary>How secure is this token?</summary>
+        </details>
+        <details>
+          <summary>What is your contract address?</summary>
+        </details>
+      </div>
+    </section>
+    
+    <section id="End">
+      <img src="./Assets/Componentes/Adds/VectorEntres.svg" alt="">
+      
+      <div class="minting">
+        <div id="TheEnd">
+          <h3>Let's start<span>minting</span></h3>
+          <p>Invest and manage all your NFTs at one place.</p>
+          <button>Get started <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 16 16" fill="none">
+            <path d="M3.94073 0.193359V1.69336H13.386L0.940735 14.1387L1.99542 15.1934L14.4407 2.74805V12.1934H15.9407V0.193359H3.94073Z" fill="white"/>
+          </svg>
+          </button>
+        </div>
+        <footer>
+          <div style="display: grid; height: 70%; margin: 1rem 0 0 0;" class="NHUB">
+            <h2>NFTHub</h2>
+            <p style="text-align: left;">Join our Discord channel or follow us on
+              Twitter to keep up to date with our latest work
+              and announcements.</p>
+              <div>
+                <ion-icon id="Twitter" name="logo-twitter"></ion-icon>
+                <ion-icon id="Discord" name="logo-discord"></ion-icon>
+                <ion-icon id="Instagram" name="logo-youtube"></ion-icon>
+              </div>
+          </div>
+          <section>
+            <div class="Quick">
+              <h4 style="margin: 0;">Quick Link</h4>
+              <ul>
+                <li>About</li>
+                <li>Collection</li>
+                <li>Roadmap</li>
+                <li>FAQs</li>
+              </ul>
+            </div>
+            <div class="works">
+              <h4 style="margin: 0;">Community</h4>
+              <ul>
+                <li>How it works!</li>
+                <li>Blockchain</li>
+                <li>Get in touch</li>
+              </ul>
+            </div>
+          </section>
+            <span style="
+            color: #7B7583;
+            font-family: Inter;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            align-self: center;
+            ">Copyright © 2023 Nfthub All Rights Reserved.</span>
+            <ul>
+              <li style="
+            color: #7B7583;
+            font-family: Inter;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;">Privacy policy</li>
+              <li style="
+            color: #7B7583;
+            font-family: Inter;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;">Terms of Use</li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="6" viewBox="0 0 16 9" fill="none">
+                <path d="M8.13411 2.45737L2.34078 8.17737C2.19411 8.37293 1.98634 8.4707 1.71745 8.4707C1.44856 8.4707 1.22856 8.38515 1.05745 8.21404C0.886337 8.04293 0.800781 7.82293 0.800781 7.55404C0.800781 7.28515 0.898559 7.07737 1.09411 6.9307L7.47411 0.477371C7.66967 0.281816 7.88967 0.184037 8.13411 0.184037C8.37856 0.184037 8.59856 0.281816 8.79411 0.477371L15.1741 6.9307C15.3697 7.07737 15.4674 7.28515 15.4674 7.55404C15.4674 7.82293 15.3819 8.04293 15.2108 8.21404C15.0397 8.38515 14.8197 8.4707 14.5508 8.4707C14.2819 8.4707 14.0741 8.37293 13.9274 8.17737L8.13411 2.45737Z" fill="#7B7583"/>
+              </svg>
+            </ul>
+        </footer>
+      </div>
+    </section>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="./Script.js"></script>
+</html>
