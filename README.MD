@@ -15,13 +15,13 @@ Projeto desenvolvido para facilitar a interação com NFTs, permitindo explorar,
 </p>
 
 <p align="center">
- <img alt="Licença" src="./Github/">
+ <img alt="Licença" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
 <br>
 
 <p align="center">
-    <img alt="projeto Hub_NFT" src="./github/hub_nft.jpg" width="100%">
+    <img alt="projeto Hub_NFT" src="./Github/Thumbnail.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
