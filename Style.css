@@ -1003,14 +1003,14 @@ footer {
   align-self: center;
   display: grid;
   justify-content: center;
-  column-gap: 21%;
-  grid-template-columns:
-   minmax(10%, 30%) minmax(10%,27%);
-  grid-template-rows: 
-   minmax(10%, 78%) minmax(10%, 17%);
-  
-  height: 38vh;
+  column-gap: 5vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  height: auto;
+  min-height: 38vh;
   margin: 2rem 0 0 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 footer section {
