@@ -17,7 +17,7 @@ body, .Dark {
 }
 body {
   margin: 0;
-  
+  transition: background 1.2s cubic-bezier(0.77,0,0.175,1), color 1.2s cubic-bezier(0.77,0,0.175,1);
   padding: 0;
   border: 0;
   box-sizing: border-box;   
