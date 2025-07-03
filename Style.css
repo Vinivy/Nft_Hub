@@ -1259,7 +1259,11 @@ footer ul {
   }
 
   .Map {
-    grid-template-rows: repeat(2, 30%);
+    grid-template-rows: repeat(2, 40%);
     grid-template-columns: repeat(2, 0.40fr);
+  }
+
+  #Release {
+    padding: 0;
   }
 }
